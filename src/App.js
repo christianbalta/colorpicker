@@ -1,32 +1,27 @@
-import React, {useState} from 'react'
-import {SwatchesPicker} from 'react-color'
-import Tippy from '@tippyjs/react'
+import React, {useState} from 'react';
+
+import data from './data';
+import List from "./List";
+
+import Logo from './images/bsz-logo-200x.png';
 import Image from './images/istockphoto-1271083806-1024x1024.png'
 
 function App() {
-
-    const [selectedColor, setSelectedColor] = useState('#ccc')
+    const [colors, setColors] = useState(data);
 
     return (
-        <section>
-            <h1 className="text-center">Business Solution Zürich</h1>
-            <h2 className="text-center">Color Picker</h2>
-
-            <div className='area' style={{backgroundColor: selectedColor}}>
-                <Tippy interactive={true} placement={'bottom'} content={
-                    <SwatchesPicker
-                        color={selectedColor}
-                        onChangeComplete={color => setSelectedColor(color.hex)}
-                    />
-                }>
-                    <button className='btn btn-primary'>+</button>
-                </Tippy>
-
-            </div>
-            <div className="image-container center">
-                <img src={Image} alt="text" width='2000' height='700'/>
-            </div>
-        </section>
+        <>
+            <header>
+                <img src={Logo} alt="bsz-logo" className="img-fluid"/>
+            </header>
+            <section>
+                <div>
+                    <div className="row">
+                        <List colors={colors}/>
+                    </div>
+                </div>
+            </section>
+        </>
     );
 }
 
