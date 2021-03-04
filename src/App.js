@@ -4,7 +4,6 @@ import data from './data';
 import List from "./List";
 
 import Logo from './images/bsz-logo-200x.png';
-import Image from './images/istockphoto-1271083806-1024x1024.png'
 
 function App() {
     const [colors, setColors] = useState(data);

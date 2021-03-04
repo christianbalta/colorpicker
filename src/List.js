@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import Image from "./images/istockphoto-1271083806-1024x1024.png";
-import data from "./data";
 
 const List = ({colors}) => {
     const [color, setColor] = useState('#ccc');
@@ -11,11 +10,9 @@ const List = ({colors}) => {
                 {colors.map((color) => {
                     const {code, hex} = color
                     return (
-                        <>
                             <div className="colors" style={{backgroundColor: hex}} onClick={() => {setColor(hex)}}>
                                 <p>RAL: {code}</p>
                             </div>
-                        </>
                     )
                 })}
             </aside>
