@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
-
-import data from './data';
 import List from "./List";
-
+import data from './data';
 import Logo from './images/bsz-logo-200x.png';
 
 function App() {

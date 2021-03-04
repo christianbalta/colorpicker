@@ -1,23 +1,25 @@
 import React, {useState} from "react";
-import Image from "./images/istockphoto-1271083806-1024x1024.png";
 
 const List = ({colors}) => {
     const [color, setColor] = useState('#ccc');
 
     return (
         <>
-            <aside className="scrollbar" id="style-2">
+            <aside className="scrollbar col-lg-3 col-sm-12" id="style-2">
                 {colors.map((color) => {
                     const {code, hex} = color
                     return (
-                            <div className="colors" style={{backgroundColor: hex}} onClick={() => {setColor(hex)}}>
-                                <p>RAL: {code}</p>
+                        <>
+                            <div className="colors" style={{backgroundColor: hex}} onClick={() => {
+                                setColor(hex)
+                            }}>
                             </div>
+                            <p>RAL: {code}</p>
+                        </>
                     )
                 })}
             </aside>
-            <div className="col-8" style={{backgroundColor: color }}>
-                <img src={Image} alt="sofa" width='100%'/>
+            <div className="col-lg-7 col-sm-12 img-container" style={{backgroundColor: color}}>
             </div>
         </>
     )
