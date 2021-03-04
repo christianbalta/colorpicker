@@ -68,7 +68,7 @@ section {
 }
 
 /********Media Queries********/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .img-container {
     margin-left: 0;
     margin-top: 50px;
