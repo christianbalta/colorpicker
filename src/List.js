@@ -6,7 +6,7 @@ const List = ({colors, images}) => {
 
     return (
         <>
-            <aside className="scrollbar col-lg-2 col-sm-12" id="style-2">
+            <div className="scrollbar col-lg-2 col-sm-12" id="style-2">
                 {colors.map((color) => {
                     const {code, hex} = color
                     return (
@@ -19,7 +19,7 @@ const List = ({colors, images}) => {
                         </>
                     )
                 })}
-            </aside>
+            </div>
             <div className="col-lg-3 col-sm-12">
                 {images.map((picture) => {
                     const {image} = picture;

@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import List from "./List";
-import data from './data';
-import Logo from './images/bsz-logo-200x.png';
-import imagesData from "./imagesData";
+import colorData from './Data/colorData';
+import imagesData from "./Data/imagesData";
+import Logo from './Images/bsz-logo-200x.png';
 
 function App() {
-    const [colors, setColors] = useState(data);
+    const [colors, setColors] = useState(colorData);
     const [images, setImages] = useState(imagesData);
 
     return (

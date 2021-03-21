@@ -1,4 +1,4 @@
-const data = [
+const colorData = [
     {
         code: "1000",
         name: "Green beige",
@@ -1279,4 +1279,4 @@ const data = [
     },
 ];
 
-export default data;
+export default colorData;
