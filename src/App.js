@@ -2,9 +2,11 @@ import React, {useState} from 'react';
 import List from "./List";
 import data from './data';
 import Logo from './images/bsz-logo-200x.png';
+import imagesData from "./imagesData";
 
 function App() {
     const [colors, setColors] = useState(data);
+    const [images, setImages] = useState(imagesData);
 
     return (
         <>
@@ -14,7 +16,7 @@ function App() {
             <section>
                 <div>
                     <div className="row">
-                        <List colors={colors}/>
+                        <List colors={colors} images={images}/>
                     </div>
                 </div>
             </section>

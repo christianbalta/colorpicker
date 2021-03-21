@@ -41,7 +41,14 @@ section {
   min-height: 700px;
   margin-left: 80px;
   padding: 0;
-  background-image: url("./images/istockphoto-1271083806-1024x1024.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-img {
+  width: auto;
+  height: 200px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
